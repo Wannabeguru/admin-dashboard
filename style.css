@@ -1,0 +1,158 @@
+@import url('https://fonts.googleapis.com/css2?family=Lato&display=swap');
+
+
+* {
+      font-family: 'Lato', sans-serif;
+      list-style-type: none;
+      margin: 0;
+
+}
+
+
+
+.container {
+    display: grid;
+    grid-template-columns: 0.25fr 1fr;
+    grid-template-rows: 0.2fr 1fr;
+}
+
+form {
+    display: flex;
+}
+
+
+.dashboard {
+    background: #083344;
+    grid-row-end: 4 span;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    color: white;
+}
+
+h3 {
+    margin-top: 0.85em;
+    margin-left: 1em; 
+}
+
+.top-dashboard {
+    color: white;
+    display: flex;
+    flex-direction: column;
+    gap: 2em;
+    margin-top: 5em;
+    color: white;
+    margin-bottom: 2em;
+    font-size: 1rem;
+    font-weight: 200;
+    
+}
+
+.bottom-dashboard {
+    display: flex;
+    flex-direction: column;
+    gap: 2em;
+    margin-top: 5em;
+    color: white;
+    margin-bottom: 2em;
+    font-size: 1rem;
+    font-weight: 200;
+}
+
+ion-icon {
+    margin-right: 0.5em;
+}
+
+.header {
+    display: grid;
+    grid-template-rows: 1fr 0.5fr;
+    grid-template-columns: 2;
+    
+}
+
+
+.search-container {
+    display: flex;
+    padding-top: 3em;
+    flex: 1;
+
+}
+
+.profile-container {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    grid-column-start: 2;
+    gap: 10px;
+}
+
+ion-icon[name="search-circle-outline"] {
+    font-size: 30px;
+    color: #0891b2;
+    
+}
+
+
+.pfp-small {
+    height: 3rem;
+    width: 3rem;
+    border-radius: 50%;
+}
+
+
+#query {
+    border: 3px solid #cffafe;
+    border-radius: 2em;
+    font-size: 1.3rem;
+    min-width: 100%;
+
+}
+
+#query::placeholder{
+    line-height: 2em;
+    font-size: 1rem;
+    padding-left: 1em;
+}
+
+
+.under-search {
+    display: grid;
+   
+}
+
+.btns-container{
+    display: flex;
+    margin-top: 1em;
+    gap: 1.2em;
+}
+
+.hbtn {
+    border: 1px solid #cffafe;
+    font-size: 1.2rem;
+    background: #0891B2 ;
+    color: white;
+    
+}
+
+.pfp-big {
+    height: 5rem;
+    width: 5rem;
+    border-radius: 50%;
+}
+.content-container {
+    background: purple;
+    display: grid;
+    grid-template-columns: repeat(3 1fr);
+    grid-template-rows: 0.15fr 1fr 0.2fr 0.15fr 1fr;
+}
+
+.box-one-row-one {
+    margin-left: 2em;
+    background-color: aqua;
+    grid-column-end: 1;
+}
+
+.box-two-row-one {
+    background-color: yellowgreen;
+    grid-column-start: 2 ;
+}

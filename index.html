@@ -8,60 +8,68 @@
     <link rel="stylesheet" href="style.css">
 </head>
 <body>
-    <!-- Dashboard Area -->
-    <div class="dashboard">
-        <ul class="top-dashboard">
-            <li>Home</li>
-            <li>Profile</li>
-            <li>Messages</li>
-            <li>History</li>
-            <li>Tasks</li>
-            <li>Communities</li>
-        </ul>
-
-        <ul class="bottom-dashboard">
-            <li>Settings</li>
-            <li>Support</li>
-            <li>Privacy</li>
-        </ul>
-    </div>
-
-    <!-- Header area -->
-    <div class="header">
-        <div class="search-area">
-            <form action="/search" method="get">
-                <input type="text" name="query" placeholder="Search away">
-            </form>
-        </div>
-        <div class="next-to-search">
-            <h3>Wannabeguru</h3>
-        </div>
-    </div>
-        <div class="under-search">
-            <div class="intro">
-                <p>img here</p>
-                <p>text here, <br>
-                    WannabeGuru!
-                </p>
-            </div>
-            <div class="intro-buttons">
-                <button>New</button>
-                <button>Upload</button>
-                <button>Search</button>
-            </div>
-        </div>
-    <!-- Content Area -->
     <div class="container">
-        <div>Project 1</div>
-        <div>Project 2</div>
-        <div>Project 3</div>
-        <div>Project 4</div>
-        <div>Project 5</div>
-        <div>Project 6</div>
-        <div>Announcements</div>
-        <div>Trending</div>
+    <!-- Dashboard Area -->
+        <div class="dashboard">
+            <h3><ion-icon name="apps-outline"></ion-icon> Dashboard</h3>
+            <ul class="top-dashboard">
+                <li><ion-icon name="home-outline"></ion-icon>Home</li>
+                <li><ion-icon name="people-outline"></ion-icon>Profile</li>
+                <li><ion-icon name="mail-open-outline"></ion-icon>Messages</li>
+                <li><ion-icon name="time-outline"></ion-icon>History</li>
+                <li><ion-icon name="copy-outline"></ion-icon>Tasks</li>
+                <li><ion-icon name="globe-outline"></ion-icon>Communities</li>
+            </ul>
+
+            <ul class="bottom-dashboard">
+                <li><ion-icon name="cog-outline"></ion-icon>Settings</li>
+                <li><ion-icon name="cog-outline"></ion-icon>Support</li>
+                <li><ion-icon name="moon-outline"></ion-icon>Privacy</li>
+            </ul>
+        </div>
+
+        <!-- Header area -->
+        <div class="header">
+            <div class="search-container">
+                <ion-icon name="search-circle-outline"></ion-icon>
+                <form action="/search" method="get">
+                    <input type="text" name="query" id='query' placeholder="Search here...">
+                </form>
+            </div>
+            <div class="profile-container">
+                <img class='pfp-small' src="images/ape_360x360_1_180x180.png" alt="profile-picture">
+                <h4>WannaBeGuru</h4>
+            </div>
+            <div class="welcome-container">
+                <img class="pfp-big" src="images/ape_360x360_1_180x180.png" alt="profile-picture">
+                <p class="greeting"> Hi there,</p>
+                <p class="greeting-name">WannaBeGuru (@wannabeguru)</p>
+            </div>
+            <div class="btns-container">
+                <button class="hbtn">New</button><button class="hbtn">Upload</button><button class="hbtn">Share</button>
+            </div>
+        </div>
+
+        <!-- Content Area -->
+        <div class="content-container">
+            <div class="box-one-row-one">Your Projects</div>
+            <div class="box-two-row-one">Announcements</div>
+            <div>Card 1</div>
+            <div>Card 2</div>
+            <div>Card 3</div>
+            <div>Card 4</div>
+            <div>Easy Peasy</div>
+            <div>Trending</div>
+            <div>Blocker</div>
+            <div>Maker</div>
+            <div>Trending Box</div>
+        </div>
+        
     </div>
 
 
+
+    <script type="module" src="https://unpkg.com/ionicons@7.1.0/dist/ionicons/ionicons.esm.js"></script>
+    <script nomodule src="https://unpkg.com/ionicons@7.1.0/dist/ionicons/ionicons.js"></script>
 </body>
 </html>
