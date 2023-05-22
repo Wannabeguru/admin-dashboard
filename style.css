@@ -230,7 +230,7 @@ form {
 .colorbox {
     background-image: linear-gradient(#67e8f9, #0891b2, #083344 );
     width: 75%;
-    height: 10px;
+    height: 100%;
     border-radius: 20px 0 0 20px;
 }
 
